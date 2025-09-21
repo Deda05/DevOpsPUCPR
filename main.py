@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 import random
-
 app = FastAPI()
 
 
@@ -15,3 +14,6 @@ async def funcaoteste():
 
 
 #fastapi dev main.py
+
+    return{"teste": True, "NumAleatorio": random.randint(0, 1000)}
+
