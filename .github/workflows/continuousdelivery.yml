@@ -1,0 +1,20 @@
+name: Continuous Integration
+on: 
+  push:
+    branches:
+      - main # ou qualquer outra branch
+
+jobs:
+  deliver:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v5
+
+      - name: simulando Continuous delivery
+        uses: actions/upload-artifact@v4
+        with:
+          name: projetozipado.zip
+          path: |
+            '**.py'
+            README.md
