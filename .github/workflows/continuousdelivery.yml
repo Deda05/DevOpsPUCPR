@@ -54,4 +54,3 @@ jobs:
           context: .
           push: true
           tags: deda05/app:latest
-#teste dockerhub
