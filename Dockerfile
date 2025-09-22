@@ -9,4 +9,3 @@ COPY . .
 
 EXPOSE 80
 CMD [ "fastapi", "run" ,"main.py", "--port", "80"]
-pip uninstall -y fastapi
