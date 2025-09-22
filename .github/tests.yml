@@ -1,6 +1,10 @@
 name: Testes Unitários
 
 on:
+  push:
+    branches:
+      - main
+      - discord-integration
   pull_request:
     branches:
       - main
